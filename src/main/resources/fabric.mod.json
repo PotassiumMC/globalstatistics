@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "globalstatistics",
+  "version": "${version}",
+  "name": "globalstatistics",
+  "description": "globalstatistics is a global version of the built-in statistics screen, tracking statistics on every server you play on.",
+  "authors": [
+    "NoahvdAa"
+  ],
+  "contact": {
+    "homepage": "https://github.com/PotassiumMC/globalstatistics",
+    "sources": "https://github.com/PotassiumMC/globalstatistics",
+    "issues": "https://github.com/PotassiumMC/globalstatistics/issues",
+    "discord": "https://discord.gg/bXG8H6PVuS",
+    "irc": "irc://irc.esper.net:6667/potassium"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "assets/globalstatistics/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.potassiummc.globalstatistics.GlobalStatistics"
+    ]
+  },
+  "mixins": [
+    "globalstatistics.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
